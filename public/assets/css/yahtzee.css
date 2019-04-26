@@ -23,6 +23,21 @@ p{
     padding-left: 5%;
 }
 
+.spacer{
+    margin-top: 10px;
+}
+
+.loginFormTitle{
+    font-family: 'Nunito', sans-serif;
+    color: white;
+}
+
+.loginForm{
+    font-family: 'Nunito', sans-serif;
+    color: black;
+    width: 150px;
+}
+
 .footer {
   position: absolute;
   right: 0;
