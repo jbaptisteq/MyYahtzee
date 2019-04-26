@@ -3,8 +3,13 @@ body {
     background-color: #191814;
 }
 
-.navbar{
+.navbar {
     font-family: 'Nunito', sans-serif;
+}
+
+.userMenu {
+    color: lightgrey;
+    font-size: 0.9em;
 }
 
 .divTitle{
@@ -32,10 +37,25 @@ p{
     color: white;
 }
 
-.loginForm{
+.loginForm {
     font-family: 'Nunito', sans-serif;
     color: black;
     width: 150px;
+}
+
+.accountTitle {
+    padding-top: 2%;
+    width: 100%;
+    text-align: center;
+}
+
+.accountSubtitle {
+    margin-top: 2%;
+    text-align: center;
+}
+
+.createParty {
+    margin-top: 20px;
 }
 
 .footer {
