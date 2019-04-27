@@ -54,6 +54,16 @@ p{
     text-align: center;
 }
 
+.accountLinkHover {
+    font-size: 1.5em;
+}
+
+.accountLinkHover:hover {
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+}
+
 .createParty {
     margin-top: 20px;
 }
