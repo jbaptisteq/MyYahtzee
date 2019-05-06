@@ -28,6 +28,11 @@ p{
     padding-left: 5%;
 }
 
+li{
+    font-family: 'Nunito', sans-serif;
+    color: white;
+}
+
 .spacer{
     margin-top: 10px;
 }
