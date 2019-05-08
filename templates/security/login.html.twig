@@ -9,33 +9,26 @@
             {% if error %}
                 <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
             {% endif %}
-
+            {% for message in app.flashes('infoReset') %}
+                        <div>
+                            <p>{{ message }}</p>
+                        </div>
+            {% endfor %}
             <h1 class="h3 mb-3 font-weight-normal loginFormTitle spacer">Rejoindre votre Interface de Gestion</h1>
             <label for="inputUsername" class="sr-only">Username</label>
             <input type="text" value="{{ last_username }}" name="username" id="inputUsername" class="form-control loginForm spacer" placeholder="Username" required autofocus>
             <label for="inputPassword" class="sr-only">Password</label>
             <input type="password" name="password" id="inputPassword" class="form-control loginForm spacer" placeholder="Password" required>
 
-            <input type="hidden" name="_csrf_token"
-                   value="{{ csrf_token('authenticate') }}"
-            >
-
-            {#
-                Uncomment this section and add a remember_me option below your firewall to activate remember me functionality.
-                See https://symfony.com/doc/current/security/remember_me.html
-
-                <div class="checkbox mb-3">
-                    <label>
-                        <input type="checkbox" name="_remember_me"> Remember me
-                    </label>
-                </div>
-            #}
+            <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
 
             <button class="btn btn-lg btn-primary loginForm spacer" type="submit">
                 Connexion
             </button>
+            <p class="mdpLose"><a href="{{ path('app_forgetPassword') }}">Mot de passe perdu</a></p>
         </form>
-        
+
+
     </div>
 </div>
 {% endblock %}

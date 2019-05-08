@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<div class="container">
+    <div class="row">
+
+        {% for message in app.flashes('alerteTokenReset') %}
+        <div>
+            <p>{{ message }}</p>
+        </div>
+        {% endfor %}
+        <form action="" method="post" >
+            <h1 class="h3 mb-3 font-weight-normal loginFormTitle spacer">Reset Password</h1>
+            <div class="form-input">
+                <h2>Email</h2>
+                <input type="email" id="emailCheck" name="emailCheck" value="" class="form-control loginForm spacer" />
+            </div>
+            <div class="form-input">
+                <h2>Mot de passe</h2>
+                <input type="password" id="newPassword" name="newPassword" class="form-control loginForm spacer" /><br />
+            </div>
+            <br />
+
+            <div>
+                <input type="submit" class="btn btn- btn-primary loginForm spacer" value="Reset" />
+            </div>
+
+        </form>
+    </div>
+</div>
+
+{% endblock %}

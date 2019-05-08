@@ -22,6 +22,12 @@ body {
     color: white;
 }
 
+h2 {
+    color: white;
+    font-size: 1.7em;
+    font-weight: 200;
+}
+
 p{
     font-family: 'Nunito', sans-serif;
     color: white;
@@ -71,6 +77,15 @@ li{
 
 .createParty {
     margin-top: 20px;
+}
+
+.mdpLose {
+    padding-left: 1%;
+}
+
+.mdpLose>a:hover{
+    color: white;
+    text-decoration: none;
 }
 
 .footer {

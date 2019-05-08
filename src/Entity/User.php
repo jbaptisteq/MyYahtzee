@@ -43,6 +43,13 @@ class User implements UserInterface
     */
     private $email;
 
+    /**
+    * @var string
+    *
+    * @ORM\Column(name="token", type="string", length=255)
+    */
+    private $token;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -119,6 +126,27 @@ class User implements UserInterface
     {
         return $this->email;
     }
+
+    /**
+    * Set token.
+    *
+    * @param string $token
+    *
+    */
+    public function setToken($token)
+    {
+        $this->token = $token;
+    }
+    /**
+    * Get token.
+    *
+    * @return string
+    */
+    public function getToken()
+    {
+        return $this->token;
+    }
+
 
     /**
     * @see UserInterface
